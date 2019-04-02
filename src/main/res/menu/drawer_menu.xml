@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/vote"
+        android:title="vote"
+        android:icon="@drawable/voter"
+        />
+    <item android:id="@+id/campaign"
+        android:title="campaign"
+        android:icon="@drawable/campaign" />
+    <item android:id="@+id/register"
+        android:title="register"
+        android:icon="@drawable/ic_launcher_background"
+        />
+    <item android:id="@+id/nominate"
+        android:title="nominate"
+        android:icon="@drawable/nominate"/>
+    <item android:id="@+id/report"
+        android:title="report"
+        android:icon="@drawable/report"
+        />
+    <item android:id="@+id/logout"
+        android:title="logout"
+        android:icon="@drawable/logout"
+        />
+</menu>
