@@ -36,7 +36,7 @@
         app:headerLayout="@layout/navigation_header"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-app:itemBackground="@color/back"
+        app:itemBackground="@color/back"
         app:itemTextColor="@android:color/background_dark"
         app:menu="@menu/drawer_menu"
         >
