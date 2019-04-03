@@ -14,8 +14,6 @@ public class vote_fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
-        return inflater.inflate(R.layout.vote_fragment,container,root);
-
+        return inflater.inflate(R.layout.vote_fragment,container,false);
     }
 }
