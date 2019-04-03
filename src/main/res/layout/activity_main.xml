@@ -13,15 +13,23 @@
         android:id="@+id/button2"
         android:layout_width="144dp"
         android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="68dp"
         android:background="@android:color/holo_orange_dark"
+
         android:text="Sign Up"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="15dp"
-
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="585dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText2"
@@ -49,14 +57,22 @@
         android:id="@+id/button"
         android:layout_width="144dp"
         android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/holo_orange_dark"
+
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="15dp"
-
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="518dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752"
         tools:ignore="MissingConstraints" />
 
     <ImageView
