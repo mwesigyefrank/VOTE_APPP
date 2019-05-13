@@ -16,7 +16,7 @@ if(noConnectivity){
     Toast.makeText(context,"disconnected",Toast.LENGTH_SHORT).show();
 }
 else {
-    Toast.makeText(context,"login in succssfull",Toast.LENGTH_SHORT).show();
+    Toast.makeText(context,"login in successful",Toast.LENGTH_SHORT).show();
 }
     }
 }

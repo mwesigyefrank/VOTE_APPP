@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ListAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class LOAD_PAGE extends AppCompatActivity {
@@ -26,6 +27,8 @@ private DrawerLayout drawer;
     private ActionBarDrawerToggle mtoggle;
     private FrameLayout frameLayout;
     private campaign campaign;
+    TextView textView;
+    String uemail;
   Examplebroadcoastreciever broad= new Examplebroadcoastreciever();
 
 
@@ -38,6 +41,10 @@ private DrawerLayout drawer;
 
         NavigationView  navigationView=findViewById(R.id.nav_view);
         campaign=new campaign();
+        TextView textView=(TextView)findViewById ( R.id.pass );
+
+        uemail=getIntent().getExtras().getString("Email");
+        textView.setText ( "EMAIL" );
 
 
 
@@ -69,6 +76,10 @@ private DrawerLayout drawer;
                     case R.id.campaign:
                         Intent inten=new Intent (LOAD_PAGE.this,post_activity.class);
                        startActivity (inten);
+                        return true;
+                    case R.id.vote:
+                        Intent inte=new Intent (LOAD_PAGE.this,VoteActivity.class);
+                        startActivity (inte);
                         return true;
 
 

@@ -59,6 +59,15 @@ lod.setOnClickListener ( new View.OnClickListener () {
                     Toast.makeText (MainActivity.this,task.getException().getMessage(),Toast.LENGTH_SHORT).show ();
                     progressDialog.dismiss ();
                 }
+              String mail=uemail.getText ().toString ();
+
+                Intent implict= new Intent ( MainActivity.this,LOAD_PAGE.class );
+                implict.putExtra ("Email",mail);
+
+
+
+
+
             }
         } );
 

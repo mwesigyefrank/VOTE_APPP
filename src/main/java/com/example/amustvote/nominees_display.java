@@ -1,5 +1,6 @@
 package com.example.amustvote;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -36,21 +37,25 @@ public class nominees_display extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 if(positions[position]=="PRESIDENT"){
-//                    Toast.makeText ( nominees_display.this , ""+positions[position] , Toast.LENGTH_SHORT ).show ();
+                    Intent president =new Intent ( nominees_display.this,candidate_nominate.class );
+                    startActivity ( president );
 
                 }
                 else if(positions[position]=="REPORTER"){
 
-
+                    Intent report =new Intent ( nominees_display.this,candidate_nominate.class );
+                    startActivity ( report );
 
                 }
                 else if(positions[position]=="SPEAKER"){
 
-
+                    Intent speaker =new Intent ( nominees_display.this,candidate_nominate.class );
+                    startActivity ( speaker );
                 }
                 else if(positions[position]=="GUILD REPRESENTATIVE"){
 
-
+                    Intent president =new Intent ( nominees_display.this,candidate_nominate.class );
+                    startActivity ( president );
                 }
                 else{
 
